@@ -1,0 +1,6 @@
+.region {
+  border: 1.5px solid rgb(40, 0, 199);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  aspect-ratio: 1 / 1;
+}

@@ -1,0 +1,11 @@
+.entry {
+  width: 100%;
+  text-align: center;
+  display: table;
+  font-size: 4vw;
+}
+
+.entry-value {
+  vertical-align: middle;
+  display: table-cell;
+}

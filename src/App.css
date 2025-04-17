@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  margin: none;
+  padding: none;
+  background-color: rgb(7, 3, 71);
+  color: white;
+}
+
+.box-of-nine-row {
+  width: 100%;
+  border: 1px solid orange;
+}
+
+.number-box {
+  width: calc(100% / 3);
+  float: left;
+  aspect-ratio: 1 / 1;
+  border: 1px solid red;
+}

@@ -1,0 +1,15 @@
+.number {
+  aspect-ratio: 1 / 1;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  border: 1px solid white;
+  border-radius: 1vw;
+  margin: 0.5vw;
+  font-weight: 300;
+}
+
+.region:nth-of-type(even) .number:nth-of-type(even),
+.region:nth-of-type(odd) .number:nth-of-type(odd) {
+  background-color: blue;
+}
