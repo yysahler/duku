@@ -1,19 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
+import React from "react";
+import store from "./store";
+import { Provider } from "react-redux";
+import "./App.css";
+import Settings from "./components/Settings/Settings";
+import Board from "./components/Board/Board";
+import NumperPad from "./components/NumberPad/NumberPad";
 
-import './App.css';
-import Board from './components/board/Board';
-import NumperPad from './components/numberpad/NumberPad';
+const App: React.FC = () => {
+    return (
+        <>
+            <Provider store={store}>
+                <div className="app">
+                    <Settings />
+                    <Board />
+                    <NumperPad />
+                </div>
+            </Provider>
+        </>
+    );
+};
 
-function App() {
-  return (
-    <>
-      <div className="app">
-        <Board></Board>
-        <NumperPad></NumperPad>
-      </div>
-    </>
-  );
-}
+
 
 export default App;

@@ -1,0 +1,14 @@
+.number-button {
+  text-align: center;
+  font-size: 4vw;
+  aspect-ratio: 1 / 1;
+  width: calc(100vw / 11 - 2vw);
+  border: 1px solid white;
+  border-radius: 1.5vw;
+  display: table;
+}
+
+.number-button span {
+  display: table-cell;
+  vertical-align: middle;
+}

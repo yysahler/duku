@@ -1,7 +1,11 @@
-import Number from '../number/Number';
+import Number from '../NumberTile/NumberTile';
 import './region.css';
 
-const Region = () => {
+type RegionProps = {
+  region: string
+}
+
+const Region: React.FC<RegionProps> = ({ region }) => {
   return (
     <>
       <div className='region'>

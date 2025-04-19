@@ -1,3 +1,5 @@
 .number-pad {
-  
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  margin-top: 2vw;
 }
