@@ -1,15 +1,15 @@
 import './note.css'
 
 type NoteProps = {
-  position: number;
+  value: number;
 }
 
-const Note: React.FC<NoteProps> = ({ position }) => {
+const Note: React.FC<NoteProps> = ({ value }) => {
   return (
     <>
-      <div className="note">
+      <div className={value === 0 ? 'note note-hidden' : 'note'}>
         <span className='note-value'>
-          {position}
+          {value}
         </span>
       </div>
     </>

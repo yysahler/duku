@@ -3,3 +3,31 @@
   grid-template-columns: repeat(11, 1fr);
   margin-top: 2vw;
 }
+
+.mode-button {
+  display: table;
+  text-align: center;
+  border: 1px solid white;
+  width: calc(100vw / 11 - 1vw);
+}
+
+.mode-button:nth-child(1) {
+  border-top-left-radius: 1.5vw;
+  border-bottom-left-radius: 1.5vw;
+}
+
+.mode-button:nth-child(2) {
+  border-top-right-radius: 1.5vw;
+  border-bottom-right-radius: 1.5vw;
+  transform: translateX(-1vw);
+}
+
+.mode-button.is-active {
+  background: white;
+  color: #070347;
+}
+
+.mode-button span {
+  display: table-cell;
+  vertical-align: middle;
+}

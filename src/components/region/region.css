@@ -1,6 +1,10 @@
 .region {
-  border: 1.5px solid rgb(40, 0, 199);
+  border: 2.5px solid #8b8b8b;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   aspect-ratio: 1 / 1;
 }
+
+/*
+&&Duckbill73Platypus##
+*/

@@ -9,3 +9,7 @@
   vertical-align: middle;
   display: table-cell;
 }
+
+.entry-is-zero {
+  color: transparent;
+}

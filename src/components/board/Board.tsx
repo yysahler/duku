@@ -1,20 +1,32 @@
-import Region from "../Region/Region";
 import "./board.css";
+import Region from "../Region/Region";
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchNewPuzzle } from '../../appSlice';
+import { AppDispatch, RootState } from '../../store';
+import { useEffect } from "react";
 
-const Board = () => {
+const Board: React.FC = () => {
+    const { status } = useSelector((state: RootState) => state.app);
+    const dispatch = useDispatch<AppDispatch>();
+    useEffect(() => {
+        dispatch(fetchNewPuzzle(60));
+    }, [dispatch]);
+
     return (
         <>
-            <div className="board">
-                <Region region="Aa"></Region>
-                <Region region="Ab"></Region>
-                <Region region="Ac"></Region>
-                <Region region="Ba"></Region>
-                <Region region="Bb"></Region>
-                <Region region="Bc"></Region>
-                <Region region="Ca"></Region>
-                <Region region="Cb"></Region>
-                <Region region="Cc"></Region>
-            </div>
+            {status === "succeeded" && (
+                <div className="board">
+                    <Region region="0,0"></Region>
+                    <Region region="0,3"></Region>
+                    <Region region="0,6"></Region>
+                    <Region region="3,0"></Region>
+                    <Region region="3,3"></Region>
+                    <Region region="3,6"></Region>
+                    <Region region="6,0"></Region>
+                    <Region region="6,3"></Region>
+                    <Region region="6,6"></Region>
+                </div>
+            )}
         </>
     );
 };

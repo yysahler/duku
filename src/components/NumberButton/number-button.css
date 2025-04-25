@@ -6,6 +6,15 @@
   border: 1px solid white;
   border-radius: 1.5vw;
   display: table;
+  cursor: not-allowed;
+}
+
+.number-button.can-be-clicked {
+  cursor: pointer;
+}
+
+.number-button.can-be-clicked.number-button:hover {
+  box-shadow: #00ff00 0px 0px 8px 4px;
 }
 
 .number-button span {
